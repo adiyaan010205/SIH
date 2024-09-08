@@ -1,8 +1,11 @@
-// src/App.js
-
 import React, { useState } from "react";
 import "./App.css";
 import courses from "./data/courses"; // Import the courses data
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/navbar';
+import Overview from './components/overview';
+import Score from './components/score';
+import CourseCareer from './components/carrer';
 
 // Tab component
 function Tabs({ activeTab, setActiveTab }) {
@@ -74,4 +77,22 @@ function CoursePage() {
   );
 }
 
-export default CoursePage;
+function App() {
+  return (
+    <Router>
+      <div>
+        <Navbar />
+        <div style={{ padding: '20px' }}>
+          <Routes>
+            <Route path="/" element={<Overview />} />
+            <Route path="/score" element={<Score />} />
+            <Route path="/course-career" element={<CourseCareer />} />
+            <Route path="/courses" element={<CoursePage />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
