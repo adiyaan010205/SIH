@@ -12,6 +12,7 @@ const Navbar = () => {
         
         <Link style={styles.navLink} to="/courses">Courses</Link> {/* New link */}
         <Link style={styles.navLink} to="/course-career">Carrers</Link>
+        <Link style={styles.navLink} to="/Login">Login</Link>
       </div>
     </nav>
   );

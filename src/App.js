@@ -4,13 +4,16 @@ import courses from "./data/courses";
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar';
+import Register from './components/Register'
 import Overview from './components/overview';
 import Score from './components/score/score';
 import CourseCareer from './components/carrer';
 import Dashboard from './components/Dashboard'; // New component
 import CommunityForum from './components/CommunityForum'; // New component
 import ResumeWizard from './components/ResumeWizard'; // New component
-import VirtualEvents from './components/VirtualEvents'; // New component
+import VirtualEvents from './components/VirtualEvents';
+import login from './components/Login' // New component
+import Login from "./components/Login";
 
 // Tab component
 function Tabs({ activeTab, setActiveTab }) {
@@ -90,6 +93,8 @@ function App() {
         <Navbar />
         <div style={{ padding: '20px' }}>
           <Routes>
+            <Route path="/Login" element={<Login />} />
+            <Route path="/Register" element={<Register/>}/>
             <Route path="/" element={<Overview />} />
             <Route path="/score" element={<Score />} />
             <Route path="/course-career" element={<CourseCareer />} />

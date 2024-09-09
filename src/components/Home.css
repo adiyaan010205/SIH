@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #282c34;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #61dafb;
+    text-align: center;
+    color: #282c34;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #282c34;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #282c34;
+}
+
+.features {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.feature-item {
+    max-width: 300px;
+}
+
+.job-preview {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.job-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #282c34;
+    text-align: center;
+    color: white;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
