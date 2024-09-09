@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import "./App.css";
-import courses from "./data/courses"; // Import the courses data
+import courses from "./data/courses";
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Overview from './components/overview';
-import Score from './components/score';
+import Score from './components/score/score';
 import CourseCareer from './components/carrer';
+import Dashboard from './components/Dashboard'; // New component
+import CommunityForum from './components/CommunityForum'; // New component
+import ResumeWizard from './components/ResumeWizard'; // New component
+import VirtualEvents from './components/VirtualEvents'; // New component
 
 // Tab component
 function Tabs({ activeTab, setActiveTab }) {
@@ -77,6 +82,7 @@ function CoursePage() {
   );
 }
 
+// App component
 function App() {
   return (
     <Router>
@@ -88,6 +94,10 @@ function App() {
             <Route path="/score" element={<Score />} />
             <Route path="/course-career" element={<CourseCareer />} />
             <Route path="/courses" element={<CoursePage />} />
+            <Route path="/dashboard" element={<Dashboard />} /> {/* New route */}
+            <Route path="/community-forum" element={<CommunityForum />} /> {/* New route */}
+            <Route path="/resume-wizard" element={<ResumeWizard />} /> {/* New route */}
+            <Route path="/virtual-events" element={<VirtualEvents />} /> {/* New route */}
           </Routes>
         </div>
       </div>
