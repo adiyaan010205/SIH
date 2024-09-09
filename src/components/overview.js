@@ -15,7 +15,7 @@ const overview = () => {
                     <p>AI-powered job recommendations, skill assessments, and career development tools all in one platform.</p>
                     <div className="cta-buttons">
                         <Link to="/Register" className="btn btn-primary">Get Started</Link>
-                        <Link to="/login" className="btn btn-secondary">Login</Link>
+                        <Link to="/Login" className="btn btn-secondary">Login</Link>
                     </div>
                 </div>
             </section>
@@ -48,7 +48,7 @@ const overview = () => {
                     <li>UI/UX Designer - Microsoft</li>
                     {/* Additional job listings can be dynamically fetched here */}
                 </ul>
-                <Link to="/carrer" className="btn btn-primary">Explore Jobs</Link>
+              
             </section>
 
             {/* Footer Section */}

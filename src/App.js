@@ -7,7 +7,7 @@ import Navbar from './components/navbar';
 import Register from './components/Register'
 import Overview from './components/overview';
 import Score from './components/score/score';
-import CourseCareer from './components/carrer';
+import CourseCareer from './components/CourseCareer';
 import Dashboard from './components/Dashboard'; // New component
 import CommunityForum from './components/CommunityForum'; // New component
 import ResumeWizard from './components/ResumeWizard'; // New component

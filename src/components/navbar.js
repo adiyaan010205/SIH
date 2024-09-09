@@ -10,7 +10,7 @@ const Navbar = () => {
         <Link style={styles.navLink} to="/">Overview</Link>
         <Link style={styles.navLink} to="/score">Score</Link>
         
-        <Link style={styles.navLink} to="/courses">Courses</Link> {/* New link */}
+        <Link style={styles.navLink} to="/courses">Courses </Link> {/* New link */}
         <Link style={styles.navLink} to="/course-career">Carrers</Link>
         <Link style={styles.navLink} to="/Login">Login</Link>
       </div>
@@ -24,7 +24,7 @@ const styles = {
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '10px 20px',
-    backgroundColor: '#6a1b9a',
+    backgroundColor: '#282c34',
     color: '#fff',
   },
   logo: {

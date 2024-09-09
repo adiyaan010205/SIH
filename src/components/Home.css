@@ -31,7 +31,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 400px;
-    background-color: #61dafb;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+
     text-align: center;
     color: #282c34;
 }
